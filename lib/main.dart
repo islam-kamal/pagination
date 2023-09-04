@@ -36,8 +36,10 @@ class _HomePageState extends State<HomePage> {
   Dio dio = new Dio();
   void _firstLoad() async {
     setState(() {
+
       _isFirstLoadRunning = true;
     });
+
     try {
       final res = await dio.get("https://driver.tag-soft.com/api/v1/cities");
       setState(() {

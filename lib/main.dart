@@ -98,9 +98,12 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(),
+        appBar: AppBar(
+
+        ),
         body: Container(
           height: MediaQuery.of(context).size.height,
+          color:  Colors.greenAccent,
           child: Container(
             child: _isFirstLoadRunning
                 ? Center(
